@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif; 
+    /* Sets the font style for the entire page */
+    display: flex; 
+    /* Aligns items in a flexible layout */
+    justify-content: center; 
+    /* Centers the calculator horizontally */
+    align-items: center; 
+    /* Centers the calculator vertically */
+    height: 100vh; 
+    /* Sets the height to fill the viewport */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
+    /* Creates a gradient background */
+    margin: 0; 
+    /* Removes default margin */
+}
+
+.calculator {
+    width: 300px; 
+    /* Sets the width of the calculator */
+    background: #fff; 
+    /* Sets a white background for the calculator */
+    border-radius: 15px; 
+    /* Rounds the corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    /* Adds a shadow around the calculator */
+    overflow: hidden; 
+    /* Ensures no content overflows the container */
+}
+
+.display {
+    background: #333; 
+    /* Sets a dark background for the display */
+    color: #fff; 
+    /* Sets the text color to white */
+    text-align: right; 
+    /* Aligns text to the right */
+    padding: 20px; 
+    /* Adds spacing inside the display */
+    font-size: 2rem; 
+    /* Sets the font size */
+    border-bottom: 2px solid #ccc; 
+    /* Adds a border below the display */
+}
+
+.buttons {
+    display: grid; 
+    /* Arranges buttons in a grid layout */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Divides the grid into 4 equal columns */
+}
+
+.btn {
+    padding: 20px; 
+    /* Adds spacing inside buttons */
+    font-size: 1.5rem; 
+    /* Sets button text size */
+    border: 1px solid #ddd; 
+    /* Adds a border to buttons */
+    background: #f7f7f7; 
+    /* Sets a light background for buttons */
+    cursor: pointer; 
+    /* Changes cursor to pointer on hover */
+    transition: all 0.3s; 
+    /* Animates changes smoothly */
+}
+
+.btn:hover {
+    background: #dfe6e9; 
+    /* Changes background color on hover */
+    transform: scale(1.1); 
+    /* Scales up the button slightly */
+}
+
+.equal {
+    background: #6c5ce7; 
+    /* Sets a purple background for the equals button */
+    color: white; 
+    /* Sets text color to white */
+}
+
+.equal:hover {
+    background: #341f97; 
+    /* Changes background color on hover for equals button */
+}
+
+.zero {
+    grid-column: span 2; 
+    /* Makes the 0 button span two columns */
+}
